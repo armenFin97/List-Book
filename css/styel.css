@@ -1,0 +1,181 @@
+body {
+    height: 100vh;
+}
+
+.header {
+    padding: 15px 0;
+    background-color: #333333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header__content {
+    display: flex;
+    justify-content: center;
+}
+
+.header__content-txt {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.main {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    padding: 70px 0;
+
+}
+
+.main__wrapper {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+}
+
+.users {
+    width: 70%;
+    height: 70vh;
+    overflow-y: auto;
+}
+
+.table {
+    border: 1px solid #CCCCCC;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table td,
+.table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tr:hover {
+    background-color: #ddd;
+}
+
+.table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #FFFFFF;
+    color: #337AB7;
+}
+
+.table th:nth-child(6),
+.table td:nth-child(6),
+.table th:nth-child(8),
+.table td:nth-child(8),
+.table td:nth-child(9) {
+    text-align: center;
+}
+
+.headerRow {
+    position: sticky;
+    top: 0;
+}
+
+.message {
+    padding: 8px;
+}
+
+.none {
+    display: none;
+}
+
+.editIcon {
+    cursor: pointer;
+    transition: .2s;
+}
+
+.editIcon>img {
+    width: 20px;
+}
+
+.editIcon:hover {
+    opacity: 0.5;
+}
+
+.profile {
+    width: 30%;
+}
+
+.form {
+    padding: 15px;
+    border: 1px solid #333333;
+    border-radius: 15px;
+}
+
+.form__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.form__wrapper-img {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #CCCCCC;
+    border-radius: 100px;
+    overflow: hidden;
+    object-fit: contain;
+}
+
+.flex {
+    display: flex;
+    gap: 10px;
+}
+label {
+    padding: 5px 0;
+}
+input {
+    border: 1px solid #CCCCCC;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+select {
+    border: 1px solid #CCCCCC;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.crt-btn {
+    background-color: #5CB85C;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: .2s;
+}
+.crt-btn:hover {
+    transform: scale(1.1);
+}
+.center {
+    text-align: center;
+}
+.p-10 {
+    padding: 10px 5px;
+}
