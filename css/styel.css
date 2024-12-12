@@ -41,6 +41,7 @@ body {
     width: 70%;
     height: 70vh;
     overflow-y: auto;
+    position: relative;
 }
 
 .table {
@@ -143,9 +144,11 @@ body {
     display: flex;
     gap: 10px;
 }
+
 label {
     padding: 5px 0;
 }
+
 input {
     border: 1px solid #CCCCCC;
     padding: 5px 10px;
@@ -163,19 +166,82 @@ select {
     border-radius: 5px;
 }
 
-.crt-btn {
-    background-color: #5CB85C;
+.btn {
     color: #FFFFFF;
     padding: 5px 10px;
     border-radius: 5px;
     transition: .2s;
 }
-.crt-btn:hover {
+.btn:hover {
     transform: scale(1.1);
 }
+
+.crt-btn {
+    background-color: #5CB85C;
+}
+
+.edt-btn {
+    background-color: #5BC0DE;
+}
+
+.dlt-btn {
+    background-color: #D9534F;
+}
+
 .center {
     text-align: center;
 }
+
 .p-10 {
     padding: 10px 5px;
 }
+
+.close-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.close {
+    cursor: pointer;
+    user-select: none;
+}
+
+.close:hover {
+    animation-name: rotating;
+    animation-duration: .2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3; 
+    border-top: 5px solid #428CBA;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
